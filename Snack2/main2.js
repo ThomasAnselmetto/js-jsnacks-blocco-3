@@ -17,5 +17,5 @@ let userNumberSum = 0
 
 let i = 0
 while (userNumberSum < 50) {
-    userNumberSum += clientNumber;
+    userNumberSum += numbers[i];
 }
