@@ -7,15 +7,20 @@
 
 let numbers = [];
 
-let clientNumber = parseInt(prompt("inserisci un numero da sommare..."))
-console.log(clientNumber);
 
-numbers.push(clientNumber);
 
 console.log(numbers);
 let userNumberSum = 0
+let clientNumber;
 
 let i = 0
 while (userNumberSum < 50) {
-    userNumberSum += numbers[i];
+
+    clientNumber = parseInt(prompt("inserisci un numero da sommare..."))
+
+    numbers.push(clientNumber);
+    userNumberSum += clientNumber;
+    i++
 }
+
+console.log(userNumberSum);
