@@ -5,16 +5,17 @@
 // creo un prompt o un input per chiedere numeri all'utente
 // creo un cinclo in cui inserisco un numero e lo faccio sommare al precedente,la condizione e' che la somma debba essere inferiore a 50,quando raggiungo 50 esco da ciclo
 
-// let numbers = [];
+let numbers = [];
 
-let userNumberEl = document.getElementById("user-number");
-let buttonEl = document.getElementById("button");
+let clientNumber = parseInt(prompt("inserisci un numero da sommare..."))
+console.log(clientNumber);
 
-buttonEl.addEventListener(
-    "click",
-    function () {
-        ;
-    }
-)
+numbers.push(clientNumber);
 
+console.log(numbers);
+let userNumberSum = 0
 
+let i = 0
+while (userNumberSum < 50) {
+    userNumberSum += clientNumber;
+}
